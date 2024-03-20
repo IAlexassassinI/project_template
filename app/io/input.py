@@ -46,4 +46,6 @@ def read_file_pandas(path):
     except FileNotFoundError:
         print("File not found")
         return None
-
+    except Exception:
+        print("Some error with panda read")
+        return None
